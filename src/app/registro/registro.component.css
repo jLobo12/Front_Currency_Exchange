@@ -1,0 +1,52 @@
+.contenedor {
+    display: flex;
+    justify-content: center;
+    --background: url('../../assets/auth_bg.png') 0 0/100% 100% no-repeat;
+}
+
+.register {
+    background-color: grey;
+    padding: 1%;
+    border-radius: 0.5rem;
+    width: 30%;
+    margin-top: 5%;
+}
+
+h1 {
+    color: white;
+}
+
+.form-register input {
+    display: block;
+    border-radius: 0.5rem;
+    width: 95%;
+    margin-bottom: 5%;
+    border: none;
+    box-shadow: inset -5px -5px 15px rgba(255, 255, 255, 0.8), inset 5px 5px 10px rgba(0, 0, 0, 0.1);
+    border: 0 none;
+    padding: 0.6rem;
+}
+
+.form-register button {
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    border: none;
+    font-size: 0.6rem;
+    color: white;
+    font-weight: bold;
+    background-color: #800000;
+    width: 100%;
+    display: block;
+    padding: 0.875rem 1rem;
+    border-radius: 1.5rem;
+    box-shadow: 6px 3px 8px black, -6px -3px 8px black;
+    cursor: pointer;
+}
+
+.login {
+    margin-top: 20px;
+}
+
+.login a {
+    color: #d10c0c;
+}

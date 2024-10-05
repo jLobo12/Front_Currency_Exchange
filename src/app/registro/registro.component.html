@@ -1,1 +1,30 @@
-<p>registro works!</p>
+<div class="contenedor">
+    <div class="register">
+        <h1>Registrarse</h1>
+
+        <form class="form-register" [formGroup]="RegisterForm" novalidate>
+            <label>Nombre:</label>
+            <input type="text" formArrayName="Name" required>
+            <label>Apellido</label>
+            <input type="text" formArrayName="LastName" required>
+            <label>Telefono</label>
+            <input type="number" formArrayName="Phone" required>
+            <label>Nombre de usuario</label>
+            <input type="text" formArrayName="UserName" required>
+            <label>Correo Electronico</label>
+            <input type="email" formArrayName="Email" required>
+            <label>Contraseña</label>
+            <input type="password" formArrayName="Password" required>
+            <label>Confirmar Contraseña</label>
+            <input type="password" formArrayName="Confirm_Password" required>
+
+            <button type="submit" (click)="Registar()">Registarse</button>
+
+            <div class="login" fxLayout="column" fxLayoutAlign="center center">
+                <span class="text">¿Ya tienes una cuenta? </span>
+                <a class="link" [routerLink]="'/'">Login</a>
+            </div>
+
+        </form>
+    </div>
+</div>

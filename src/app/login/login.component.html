@@ -1,1 +1,23 @@
-<p>login works!</p>
+<div class="contenedor">
+    <div class="login">
+        <h1>Iniciar sesión</h1>
+    
+        <form class="custom-form" [formGroup]="LoginForm" novalidate>
+            <label>Usuario o Correo Electronico:</label>
+            <input type="email" formControlName="User_Email" required>
+            <div *ngIf="ErrorUserNameOrEmail == true">
+                Please enter a valid username or email.
+            </div>
+
+            <label>Contraseña:</label>
+            <input type="password" formControlName="Password" required="">
+
+            <button type="submit" (click)="login()">Log in</button>
+
+            <div class="register" fxLayout="column" fxLayoutAlign="center center">
+                <span class="text">¿No tienes una cuenta? </span>
+                <a class="link" routerLink="/Registro">Crea una cuenta</a>
+            </div>
+        </form>
+    </div>
+</div>
